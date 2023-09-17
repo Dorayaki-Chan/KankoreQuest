@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ./src",
+    "build-macOS": "electron-packager ./src FirstApp --platform=darwin --arch=x64 --overwrite",
+    "build-windows": "electron-packager ./src FirstApp --platform=win32 --arch=x64 --overwrite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^26.2.1",
+    "electron-packager": "^17.1.2"
+  }
+}
